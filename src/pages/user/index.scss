@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #ffffff;
+  flex-direction: column;
+  padding: 20px 0;
+
+  & .avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+  }
+
+  & .name {
+    font-size: 35px;
+    color: #606266;
+
+    & .level {
+      padding: 2px 10px;
+      border: 1px solid #FF99CC;
+      border-radius: 2px;
+      color: #FF99CC;
+      font-size: 20px;
+    }
+  }
+}
+
+.block {
+  margin-top: 30px;
+  padding: 0 25px;
+  background-color: #ffffff;
+  & .list {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid #e5e5e5;
+    align-items: center;
+    font-size: 30px;
+    color: #606266;
+
+    & .van-icon {
+      font-size: 40px;
+      width: 80px;
+      text-align: center;
+    }
+
+    & .icon:last-child {
+      color: #909399;
+    }
+
+    & .count {
+      text-align: right;
+      flex: 5;
+    }
+    & .title {
+      flex: 10;
+      box-sizing: border-box;
+      padding: 0 25px;
+      overflow: hidden;
+      height: 100px;
+      line-height: 100px;
+      text-overflow:ellipsis;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  & .list:last-child {
+    border-bottom: none;
+  }
+
+}
